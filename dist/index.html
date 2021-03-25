@@ -10,141 +10,98 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <div class="nav-link">
-                    <div class="nav-icon">
-                        <i class="fas fa-check-double fa-3x fa-primary"></i>
+    <header>
+        <div class="header_container">
+            <img src="./assets/img/pngegg.png" alt="" class="header_img">
+            <a href="#" class="header_logo">ToDoLoui</a>
+            <div class="header_toggle">
+                <i class="fas fa-bars" id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav" id="navbar">
+        <nav class="nav_container">
+            <div>
+                <a href="" class="nav_link nav_logo">
+                    <i class="fas fa-check-double nav_icon"></i>
+                    <span class="nav_logo_name">ToDoLoui</span>
+                </a>
+                <div class="nav_list">
+                    <div class="nav_items">
+                        <h3 class="nav_subtitle">Categories</h3>
+                        <a href="#" class="nav_link">
+                            <i class="fas fa-inbox nav_icon"></i>
+                            <span class="nav_name">Inbox</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <i class="fas fa-calendar-day nav_icon"></i>
+                            <span class="nav_name">Today</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <i class="fas fa-calendar-week nav_icon"></i>
+                            <span class="nav_name">This Week</span>
+                        </a>
+                        <div class="nav_dropdown">
+                            <a href="#" class="nav_link">
+                                <i class="fas fa-clipboard-list nav_icon"></i>
+                                <span class="nav_name">Projects</span>
+                                <i class="fas fa-chevron-down nav_icon nav_dropdown_icon"></i>
+                            </a>
+                            <div class="nav_dropdown_collapse">
+                                <div class="nav_dropdown_content">
+                                    <a href="#" class="nav_dropdown_item">Project 1</a>
+                                    <a href="#" class="nav_dropdown_item">Project 2</a>
+                                    <a href="#" class="nav_dropdown_item">Project 3</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="nav-text">
-                        <span>ToDoLui</span>
-                    </a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link">
-                    <div class="nav-icon">
-                        <i class="fas fa-inbox fa-3x fa-primary"></i>
-                    </div>
-                    <a href="#" class="nav-text">
-                        <span>Inbox</span>
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link">
-                    <div class="nav-icon">
-                        <i class="fas fa-calendar-day fa-3x fa-primary"></i>
-                    </div>
-                    <a href="#" class="nav-text">
-                        <span>Today</span>
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link">
-                    <div class="nav-icon">
-                        <i class="fas fa-calendar-week fa-3x fa-primary"></i>
-                    </div>
-                    <a href="#" class="nav-text">
-                        <span>This Week</span>
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link">
-                    <div class="nav-icon">
-                        <i class="fab fa-github fa-3x fa-primary"></i>
-                    </div>
-                    <a href="#" class="nav-text">
-                        <span>GitHub</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+            </div>
+
+            <a href="https://github.com/bochnotomas" class="nav_link nav_github">
+                <i class="fab fa-github nav_icon"></i>
+                <span class="nav_name">@bochnotomas</span>
+            </a>
+        </nav>
+    </div>
 
     <main>
         <h1>To Do List</h1>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum commodi iste, explicabo sapiente
-            natus facere error? Quo sunt, quod delectus asperiores iure, hic nobis adipisci, itaque suscipit consectetur
-            dolore?
-            Tempore consequuntur fugiat repellendus perferendis corporis saepe ullam deleniti at eaque eligendi nihil
-            quis, id ratione? Facilis quam impedit laboriosam totam numquam aspernatur, modi voluptatem, magnam, fuga
-            corrupti commodi. Minima.
-            Praesentium aut repudiandae, ut voluptates quas cumque architecto in sequi neque molestiae doloribus
-            similique, optio nobis aliquam sit? At dolores suscipit nobis atque quae voluptatibus distinctio doloremque
-            ipsa voluptatem blanditiis.
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt ratione ullam dolorum similique
+            nesciunt officiis nihil tempore inventore, excepturi veritatis obcaecati cupiditate praesentium, ipsum
+            corporis sed. Totam, modi amet!
+            Molestias laudantium, quod commodi, amet consequatur in ut cum nobis quis ullam eum provident fugiat. Labore
+            unde libero iste dignissimos ab quidem totam! Illo facilis, ab necessitatibus eum possimus autem!
+            Praesentium vel eum consequatur similique. Commodi fugit, ipsum voluptates ducimus corporis, saepe culpa
+            numquam officiis, ipsam tempora sint et? Quod atque quaerat asperiores est deserunt facilis suscipit quo cum
+            ullam.
+            Quos dicta corporis nam maiores vitae explicabo fugiat labore beatae quibusdam hic aliquid quod ipsam qui
+            minus suscipit eligendi neque quam, voluptates necessitatibus consequatur voluptatibus quasi. Dolore eveniet
+            vero nisi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt ratione ullam dolorum similique
+            nesciunt officiis nihil tempore inventore, excepturi veritatis obcaecati cupiditate praesentium, ipsum
+            corporis sed. Totam, modi amet!
+            Molestias laudantium, quod commodi, amet consequatur in ut cum nobis quis ullam eum provident fugiat. Labore
+            unde libero iste dignissimos ab quidem totam! Illo facilis, ab necessitatibus eum possimus autem!
+            Praesentium vel eum consequatur similique. Commodi fugit, ipsum voluptates ducimus corporis, saepe culpa
+            numquam officiis, ipsam tempora sint et? Quod atque quaerat asperiores est deserunt facilis suscipit quo cum
+            ullam.
+            Quos dicta corporis nam maiores vitae explicabo fugiat labore beatae quibusdam hic aliquid quod ipsam qui
+            minus suscipit eligendi neque quam, voluptates necessitatibus consequatur voluptatibus quasi. Dolore eveniet
+            vero nisi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt ratione ullam dolorum similique
+            nesciunt officiis nihil tempore inventore, excepturi veritatis obcaecati cupiditate praesentium, ipsum
+            corporis sed. Totam, modi amet!
+            Molestias laudantium, quod commodi, amet consequatur in ut cum nobis quis ullam eum provident fugiat. Labore
+            unde libero iste dignissimos ab quidem totam! Illo facilis, ab necessitatibus eum possimus autem!
+            Praesentium vel eum consequatur similique. Commodi fugit, ipsum voluptates ducimus corporis, saepe culpa
+            numquam officiis, ipsam tempora sint et? Quod atque quaerat asperiores est deserunt facilis suscipit quo cum
+            ullam.
+            Quos dicta corporis nam maiores vitae explicabo fugiat labore beatae quibusdam hic aliquid quod ipsam qui
+            minus suscipit eligendi neque quam, voluptates necessitatibus consequatur voluptatibus quasi. Dolore eveniet
+            vero nisi.</p>
     </main>
 
 

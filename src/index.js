@@ -1,11 +1,5 @@
-class Item {
+import { showMenu, changePage } from './modules/dom_manipulation'
 
-    constructor(title, description, dueDate, priority, checked) {
-        this.title = title;
-        this.description = description;
-        this.dueDate = dueDate;
-        this.priority = priority;
-        this.checked = checked;
-    }
-}
+showMenu('header-toggle', 'navbar')
+changePage()
 
