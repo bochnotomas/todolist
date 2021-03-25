@@ -1,4 +1,5 @@
 class Item {
+
     constructor(title, description, dueDate, priority, checked) {
         this.title = title;
         this.description = description;
@@ -6,5 +7,5 @@ class Item {
         this.priority = priority;
         this.checked = checked;
     }
-
 }
+
