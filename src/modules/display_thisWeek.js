@@ -1,4 +1,7 @@
-function displayForm() {
+function displayThisWeek() {
+    const logo = document.querySelector(".header_logo")
+    logo.innerHTML = "This Week"
+
     const main = document.querySelector("main")
     main.innerHTML = ""
     const toDosContainer = document.createElement("section")
@@ -8,4 +11,4 @@ function displayForm() {
     main.appendChild(toDosContainer)
 }
 
-export { displayForm }
+export { displayThisWeek }
