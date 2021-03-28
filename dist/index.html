@@ -56,10 +56,17 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="nav_link" id="thisWeek">
+                        <a href="#" class="nav_link" id="todo_project_add">
                             <i class="fas fa-plus-circle nav_icon"></i>
                             <span class="nav_name">Add Project</span>
                         </a>
+                        <div class="form_dropdown hidden">
+                            <form action="#">
+                                <label>Title:</label>
+                                <input type="text" id="project_title">
+                                <input type="submit">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,8 +79,39 @@
     </div>
 
     <main>
-        <section class="todos_container">
+        <section class="todo_add_form">
+            <div class="todo_item_add">
+                <span>Add tasks</span>
+                <i class="fas fa-plus todo_item_add_icon"></i>
+            </div>
 
+            <div class="popup hidden">
+                <div class="blocker">
+
+                </div>
+
+                <div class="task_popup_content">
+                    <form action="#">
+                        <label>Title:</label>
+                        <input type="text" id="task_title">
+                        <label>Description:</label>
+                        <textarea id="task_description" cols="20" rows="10"></textarea>
+                        <label>Due date:</label>
+                        <input type="date" id="task_dueDate">
+                        <label>Priority:</label>
+                        <select id="task_priority">
+                            <option value="low">Low</option>
+                            <option value="med">Medium</option>
+                            <option value="high">High</option>
+                            <option value="urg">Urgent</option>
+                        </select>
+                        <input type="submit" id="task_submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="todos_container">
         </section>
     </main>
 

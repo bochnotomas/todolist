@@ -2,11 +2,8 @@ function displayInbox() {
     const logo = document.querySelector(".header_logo")
     logo.innerHTML = "Inbox"
 
-    const main = document.querySelector("main")
-    main.innerHTML = ""
-    const toDosContainer = document.createElement("section")
-    toDosContainer.classList.add("todos_container")
-    toDosContainer.innerHTML = `<div class="todo_item_add"><div class="todo_item_showcase"><span class="todo_item_title">Add Task</span><i class="fas fa-plus todo_item_add_icon"></i></div></div>`
+    const toDosContainer = document.querySelector(".todos_container")
+    toDosContainer.innerHTML = ""
 
     const todoItem = document.createElement("div")
     todoItem.classList.add("todo_item")
@@ -46,7 +43,6 @@ function displayInbox() {
     todoItemDesc.classList.add("todo_item_desc")
     todoItemDesc.innerHTML = "Lorem"
 
-    main.appendChild(toDosContainer)
     toDosContainer.appendChild(todoItem)
 
     todoItem.appendChild(todoItemShowcase)
