@@ -80,9 +80,16 @@
 
     <main>
         <section class="todo_add_form">
-            <div class="todo_item_add">
-                <span>Add tasks</span>
-                <i class="fas fa-plus todo_item_add_icon"></i>
+            <div class="todo_option">
+                <div class="todo_item_add">
+                    <span>Add tasks</span>
+                    <i class="fas fa-plus todo_item_add_icon"></i>
+                </div>
+
+                <div class="todo_item_clear">
+                    <span>Clear cache</span>
+                    <i class="far fa-trash-alt todo_item_clear_icon"></i>
+                </div>
             </div>
 
             <div class="popup hidden">
@@ -91,7 +98,7 @@
                 </div>
 
                 <div class="task_popup_content">
-                    <form action="#">
+                    <form action="">
                         <label>Title:</label>
                         <input type="text" id="task_title">
                         <label>Description:</label>
@@ -100,10 +107,10 @@
                         <input type="date" id="task_dueDate">
                         <label>Priority:</label>
                         <select id="task_priority">
-                            <option value="low">Low</option>
-                            <option value="med">Medium</option>
-                            <option value="high">High</option>
-                            <option value="urg">Urgent</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                            <option value="Urgent">Urgent</option>
                         </select>
                         <input type="submit" id="task_submit">
                     </form>

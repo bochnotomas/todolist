@@ -260,6 +260,7 @@ main {
 
 .todo_item_check {
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .todo_item_title {
@@ -294,11 +295,28 @@ main {
     transform: rotate(180deg);
 }
 
+.todo_option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
 
 .todo_item_add {
     height:  2rem;
     transition: .4s ease-in-out;
     background: var(--first-color-light);
+    color: var(--text-color);
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.todo_item_clear {
+    height:  2rem;
+    transition: .4s ease-in-out;
+    background: red;
     color: var(--text-color);
     border-radius: .25rem;
     display: flex;
@@ -322,6 +340,13 @@ main {
     padding: 0 5px;
 }
 
+.todo_item_clear * {
+    padding: 0 5px;
+}
+
+.todo_item_clear:hover {
+    background: rgb(122, 0, 0);
+}
 /* Pop up forms */
 .blocker {
     opacity: 0.8;
