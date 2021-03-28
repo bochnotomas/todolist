@@ -28,14 +28,13 @@ function addTaskDisplay() {
 function addProjectDisplay() {
     const actionButton = document.querySelector("#todo_project_add")
     const popUpForm = document.querySelector(".form_dropdown")
-    const nav = document.querySelector("#navbar")
 
     actionButton.addEventListener('click', () => {
         popUpForm.classList.toggle("hidden")
 
     })
-
 }
+
 
 function setActive(link, listOfLinks) {
     listOfLinks.forEach(el => {

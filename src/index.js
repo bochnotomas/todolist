@@ -2,6 +2,7 @@ import { showMenu, addTaskDisplay, addProjectDisplay, setActive } from './module
 import { displayInbox } from './modules/display_inbox'
 import { displayToday } from './modules/display_today'
 import { displayThisWeek } from './modules/display_thisWeek'
+import { submitForm, clearLocalStorage } from './modules/input_logic'
 
 function homePage() {
     const inbox = document.querySelector("#inbox")
@@ -12,6 +13,10 @@ function homePage() {
     showMenu('header-toggle', 'navbar')
     addTaskDisplay()
     addProjectDisplay()
+    submitForm()
+    clearLocalStorage()
+    displayInbox()
+    setActive(inbox, links)
 
     inbox.addEventListener('click', (e) => {
         e.preventDefault()
@@ -30,9 +35,6 @@ function homePage() {
         displayThisWeek()
         setActive(thisWeek, links)
     })
-
-
-
 }
 
 homePage()
