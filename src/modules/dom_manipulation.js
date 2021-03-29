@@ -11,6 +11,7 @@ function showMenu(headerToggle, navbarId) {
     }
 }
 
+
 function addTaskDisplay() {
     const actionButton = document.querySelector(".todo_item_add")
     const popUpForm = document.querySelector(".popup")
@@ -25,16 +26,6 @@ function addTaskDisplay() {
     })
 }
 
-function addProjectDisplay() {
-    const actionButton = document.querySelector("#todo_project_add")
-    const popUpForm = document.querySelector(".form_dropdown")
-
-    actionButton.addEventListener('click', () => {
-        popUpForm.classList.toggle("hidden")
-
-    })
-}
-
 
 function setActive(link, listOfLinks) {
     listOfLinks.forEach(el => {
@@ -44,4 +35,5 @@ function setActive(link, listOfLinks) {
     link.classList.toggle('active')
 }
 
-export { showMenu, addTaskDisplay, addProjectDisplay, setActive }
+
+export { showMenu, addTaskDisplay, setActive }

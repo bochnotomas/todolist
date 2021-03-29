@@ -1,4 +1,4 @@
-import { removeLocalTodos } from './input_logic'
+import { checked } from './input_logic'
 
 function displayInbox() {
     const logo = document.querySelector(".header_logo")
@@ -19,13 +19,20 @@ function displayInbox() {
             const todoItemShowcase = document.createElement("div")
             todoItemShowcase.classList.add("todo_item_showcase")
 
+
+
             const todoItemCheck = document.createElement("i")
             todoItemCheck.classList.add("far")
             todoItemCheck.classList.add("fa-square")
             todoItemCheck.classList.add("todo_item_check")
             todoItemCheck.id = idx
             todoItemCheck.onclick = () => {
-                removeLocalTodos(todoItemCheck.id)
+                checked(todoItemCheck.id)
+            }
+            if (el.checked === true) {
+                todoItem.classList.add("checked")
+                todoItemCheck.classList.remove("fa-square")
+                todoItemCheck.classList.add("fa-check-square")
             }
             const todoItemTitle = document.createElement("span")
             todoItemTitle.classList.add("todo_item_title")

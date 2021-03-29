@@ -1,3 +1,4 @@
+//individual task handling logic
 class Task {
 
     constructor(title, description, dueDate, priority) {
@@ -25,7 +26,6 @@ function submitForm() {
             console.log(priority.value)
             let task = new Task(title.value, description.value, dueDate.value, priority.value)
             saveLocalTodos(task)
-            window.location.reload(true)
         }
     })
 }
@@ -39,7 +39,7 @@ function saveLocalTodos(todo) {
         todos = JSON.parse(localStorage.getItem("todos"))
     }
 
-    todos.push(todo)
+    todos.unshift(todo)
     localStorage.setItem("todos", JSON.stringify(todos))
 
 }
@@ -55,8 +55,24 @@ function removeLocalTodos(idx) {
 
     todos.splice(idx, 1)
     localStorage.setItem("todos", JSON.stringify(todos))
+
+}
+
+function checked(idx) {
+    let todos
+
+    if (localStorage.getItem("todos") == null) {
+        todos = []
+    } else {
+        todos = JSON.parse(localStorage.getItem("todos"))
+    }
+
+    todos[idx].checked = true;
+    todos.push(todos.splice(idx, 1)[0]) //pushing element to the end of array
+    localStorage.setItem("todos", JSON.stringify(todos))
     window.location.reload()
 }
+
 
 
 function clearLocalStorage() {
@@ -69,4 +85,6 @@ function clearLocalStorage() {
 }
 
 
-export { submitForm, removeLocalTodos, clearLocalStorage }
+
+
+export { submitForm, removeLocalTodos, clearLocalStorage, checked }

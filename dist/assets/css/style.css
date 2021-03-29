@@ -194,7 +194,8 @@ header {
 .nav_dropdown_item {
     font-size: var(--smaller-font-size);
     font-weight: 400;
-    color: var(--text-color); 
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .nav_dropdown_item:hover {
@@ -258,9 +259,17 @@ main {
     justify-content:space-between;
 }
 
+.checked {
+    background: grey;
+}
+
 .todo_item_check {
     margin-left: 20px;
     cursor: pointer;
+}
+
+.todo_item_check:hover {
+    color: red;
 }
 
 .todo_item_title {

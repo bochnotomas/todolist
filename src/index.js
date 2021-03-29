@@ -1,8 +1,9 @@
-import { showMenu, addTaskDisplay, addProjectDisplay, setActive } from './modules/dom_manipulation'
+import { showMenu, addTaskDisplay, setActive } from './modules/dom_manipulation'
 import { displayInbox } from './modules/display_inbox'
 import { displayToday } from './modules/display_today'
 import { displayThisWeek } from './modules/display_thisWeek'
 import { submitForm, clearLocalStorage } from './modules/input_logic'
+
 
 function homePage() {
     const inbox = document.querySelector("#inbox")
@@ -11,11 +12,10 @@ function homePage() {
     const links = document.querySelectorAll('.nav_link')
 
     showMenu('header-toggle', 'navbar')
+    displayInbox()
     addTaskDisplay()
-    addProjectDisplay()
     submitForm()
     clearLocalStorage()
-    displayInbox()
     setActive(inbox, links)
 
     inbox.addEventListener('click', (e) => {
@@ -35,6 +35,8 @@ function homePage() {
         displayThisWeek()
         setActive(thisWeek, links)
     })
+
+
 }
 
 homePage()
