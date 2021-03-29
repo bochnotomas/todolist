@@ -7,3 +7,5 @@ Personal todolist app made using webpack and date-fns.
 ## Web
 ![previewDesktop](/dist/assets/img/ToDoLouiDesktop.png)
 
+## Live Preview
+[App](https://bochnotomas.github.io/todolist/)
